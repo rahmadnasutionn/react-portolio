@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply text-gray-400 background;
+  }
+
+  a {
+    @apply font-medium text-violet-400 hover:text-violet-300
+  }
+
+  strong {
+    @apply font-bold;
+  }
+}
+
+@layer components {
+  .title {
+    @apply text-gray-50 leading-none font-extrabold tracking-tighter;
+  }
+
+  .subtitle {
+    @apply font-thin leading-none text-gray-300;
+  }
+
+  .body {
+    @apply text-gray-400;
+  }
+
+  .h1 {
+    @apply text-5xl sm:text-6xl lg:text-7xl text-glow;
+  }
+
+  .h1_contact {
+    @apply text-5xl sm:text-6xl lg:text-7xl text-glow;
+  }
+
+  .h2 {
+    @apply text-3xl sm:text-4xl lg:text-5xl text-glow;
+  }
+
+  .h3 {
+    @apply text-2xl sm:text-3xl lg:text-4xl text-glow;
+  }
+
+  .h4 {
+    @apply text-2xl lg:text-3xl;
+  }
+
+  .h5 {
+    @apply text-xl lg:text-2xl;
+  }
+
+  .Layout {
+    @apply min-h-screen flex flex-col relative overflow-hidden bg-transparent;
+  }
+
+  .Layout::before {
+    @apply h-full w-full absolute;
+
+    filter: blur(30px) opacity(20%);
+    content: '';
+    background-size: cover;
+    z-index: -1;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 4rem rgb(192 219 255 / 30%),
+      0 0 1rem rgb(167 139 250 / 30%);
+  }
+
+  .code-effect::before {
+    content: '.';
+    @apply text-gray-50;
+  }
+  .code-effect::after {
+    content: '()';
+    @apply text-gray-50;
+  }
+
+  .react-effect::before {
+    content: '<';
+    @apply text-gray-50;
+  }
+  .react-effect::after {
+    content: '/>';
+    @apply text-gray-50 ml-2;
+  }
+
+  .background {
+    background-color: #040d21;
+  }
+
+  .Layout.page-bg-4::before {
+    background-image: url(../assets/bg-4.jpeg);
+  }
+  .Layout.page-bg-8::before {
+    background-image: url(../assets/bg-8.jpeg);
+  }
+}
