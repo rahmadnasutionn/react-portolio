@@ -3,7 +3,7 @@ import Contact from './pages/Contact';
 import Me from './pages/Me';
 import ProjectsPage from './pages/Projects';
 import { BrowserRouter } from 'react-router-dom';
-import Provider from './provider';
+import Provider from './Provider';
 
 function App() {
 
