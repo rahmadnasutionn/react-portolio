@@ -9,7 +9,7 @@ function Contact() {
   return (
     <Layout>
       <AnimOnAppear className="max-w-4xl mx-auto my-12 p-4">
-        <h1 className="title h1_contact mb-4">
+        <h1 className="title h1 mb-4">
           <span className="pb-3 inline-block">🤙</span>
           <br />
           Say Hello --

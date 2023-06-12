@@ -14,7 +14,7 @@ function Me() {
       <div className="max-w-4xl mx-auto w-full p-4">
         <AnimOnAppear>
           <section className="my-24">
-            <h1 className="title h1_contact text-glow mb-4 tracking-tighter">
+            <h1 className="title h1 text-glow mb-4 tracking-tighter">
               {mePage.title}
             </h1>
             <p className="h3 max-w-2xl subtitle mb-4">

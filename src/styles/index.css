@@ -4,7 +4,7 @@
 
 @layer base {
   body {
-    @apply text-gray-400 background;
+    @apply background text-gray-400;
   }
 
   a {
@@ -15,8 +15,8 @@
     @apply font-bold;
   }
 
-  code,
-  pre {
+  pre,
+  code {
     @apply font-mono;
   }
 }
@@ -38,10 +38,6 @@
     @apply text-5xl sm:text-6xl lg:text-7xl text-glow;
   }
 
-  .h1_contact {
-    @apply text-5xl sm:text-6xl lg:text-7xl text-glow;
-  }
-
   .h2 {
     @apply text-3xl sm:text-4xl lg:text-5xl text-glow;
   }
@@ -58,6 +54,15 @@
     @apply text-xl lg:text-2xl;
   }
 
+  .text-glow {
+    text-shadow: 0 0 4rem rgb(192 219 255 / 30%),
+      0 0 1rem rgb(167 139 250 / 30%);
+  }
+
+  .aspect-macbook {
+    aspect-ratio: 1440 / 900;
+  }
+
   .Layout {
     @apply min-h-screen flex flex-col relative overflow-hidden bg-transparent;
   }
@@ -71,9 +76,15 @@
     z-index: -1;
   }
 
-  .text-glow {
-    text-shadow: 0 0 4rem rgb(192 219 255 / 30%),
-      0 0 1rem rgb(167 139 250 / 30%);
+  .Layout.page-bg-8::before {
+    background-image: url(../assets/bg-8.jpeg);
+  }
+  .Layout.page-bg-4::before {
+    background-image: url(../assets/bg-4.jpeg);
+  }
+
+  .background {
+    background-color: #040d21;
   }
 
   .code-effect::before {
@@ -92,16 +103,5 @@
   .react-effect::after {
     content: '/>';
     @apply text-gray-50 ml-2;
-  }
-
-  .background {
-    background-color: #040d21;
-  }
-
-  .Layout.page-bg-4::before {
-    background-image: url(../assets/bg-4.jpeg);
-  }
-  .Layout.page-bg-8::before {
-    background-image: url(../assets/bg-8.jpeg);
   }
 }
