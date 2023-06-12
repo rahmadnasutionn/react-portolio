@@ -8,11 +8,16 @@
   }
 
   a {
-    @apply font-medium text-violet-400 hover:text-violet-300
+    @apply font-medium text-violet-400 hover:text-violet-300;
   }
 
   strong {
     @apply font-bold;
+  }
+
+  code,
+  pre {
+    @apply font-mono;
   }
 }
 
