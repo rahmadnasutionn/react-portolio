@@ -18,7 +18,7 @@ export const idLocalization = {
       description:
         'Saya seorang Software Engineer yang berspesialisasi di sisi frontend, keahlian utama saya adalah frontend dev menggunakan React. Saya juga memiliki kemampuan untuk membuat kode di sisi backend. Saya sangat tertarik dengan teknologi web modern menggunakan JavaScript/TypeScript dengan mempertimbangkan tren dan teknik terbaru. Selain pemrograman,',
       description2:
-        'Saya tertarik pada bidang olahraga dan senang berolahraga seperti sepeda gunung atau senam.' 
+        'Saya tertarik pada bidang olahraga dan senang berolahraga seperti bersepeda atau senam, dan saya suka music.' 
     },
     projectPage: {
       title: 'Bekerja, belajar, dan meningkatkan kemampuan',
@@ -40,7 +40,7 @@ export const enLocalization = {
       description:
         "I'm Software Engineer who specialized in frontend side, My main skill is frontend dev using React. I also have an ability to code in backend side. Very passionate about modern web technology using JavaScript, TypeScript while taking into consideration the latest trends and techniques.",
       description2:
-        "Beside programming, I'm interested in sports and enjoy to play sports like mountain bike or calisthenics."
+        "Beside programming, I'm interested in sports and enjoy to play sports like bike or calisthenics, and I like music."
     },
     projectPage: {
       title: 'Work, learn, and improve abilities',

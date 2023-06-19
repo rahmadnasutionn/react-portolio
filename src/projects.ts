@@ -49,6 +49,50 @@ const projects: Projects[] = [
     unFinished: true,
   },
   {
+    title: 'semina',
+    excerpt:
+      'Bootcamp mern stack build website event like yesplis',
+    srcUrl: 'https://github.com/rahmadnasutionn/client-bootcamp-semina',
+    createdAt: '10/2/2022',
+    tags: [
+      'nextjs',
+      'typescript',
+      'mongoose',
+      'expressjs as backend',
+      'mongodb',
+      'reactjs as cms',
+    ],
+    unFinished: true,
+  },
+  {
+    title: 'storegg',
+    excerpt:
+      'Website top up voucher game',
+    srcUrl: 'https://github.com/rahmadnasutionn/storegg-main',
+    createdAt: '14/8/2022',
+    tags: [
+      'nextjs',
+      'typescript',
+      'mongoose',
+      'expressjs as backend',
+      'mongodb',
+    ],
+    unFinished: true,
+  },
+  {
+    title: 'todo list',
+    excerpt:
+      'this website was created to complete the challenge devcode.gethired.id',
+    srcUrl: 'https://github.com/rahmadnasutionn/devcode-todolist-reactjs',
+    demoUrl: 'https://devrank-todolist-rahmad.netlify.app/',
+    createdAt: '19/6/2023',
+    tags: [
+      'reactjs',
+      'typescript',
+    ],
+    unFinished: true,
+  },
+  {
     title: 'grilly',
     excerpt:
       'Grilly is an application to fulfil submission dicoding in becoming front-end developer expert',
