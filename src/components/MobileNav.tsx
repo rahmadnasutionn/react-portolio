@@ -1,11 +1,13 @@
 import { MainNavType } from '../interfaces'
 import useLockBody from '../hooks/useLockBody';
+import { ReactNode } from 'react';
 
 interface MobileNavProps {
   items: MainNavType[];
+  children?: ReactNode
 }
 
-function MobileNav({ items }: MobileNavProps) {
+function MobileNav({ items, children }: MobileNavProps) {
   useLockBody();
 
   return (
@@ -29,6 +31,7 @@ function MobileNav({ items }: MobileNavProps) {
             </Link>
           ))}
         </nav>
+        {children}
       </div>
     </div>
   )

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { navMenu } from "../../config";
 import useLanguage from "../../hooks/useLanguage";
 import MainNav from "../MainNav";
-import { GitHub, GithubIcon } from "../icons";
+import { GitHub } from "../icons";
 
 function Header() {
   const { language, toggleLanguage } = useLanguage();
