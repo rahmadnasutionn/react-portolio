@@ -8,6 +8,7 @@ function ProjectCards({
   tags,
   demoUrl,
   srcUrl,
+  unFinished
 }: Projects) {
   return (
     <article>
@@ -34,6 +35,12 @@ function ProjectCards({
           >
             <ExternalLinks />
           </a>
+        )}
+
+        {!unFinished && (
+          <span className="m-1">
+            ( progress )
+          </span>
         )}
       </div>
 

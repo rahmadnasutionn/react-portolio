@@ -2,6 +2,44 @@ import { Projects } from "./interfaces";
 
 const projects: Projects[] = [
   {
+    title: 'animations and hooks',
+    excerpt:
+      'A collection of handmade, free, written with typescript, and ready to use animations & hooks for your next project.',
+    demoUrl: 'https://animation-hooks.vercel.app/',
+    srcUrl: 'https://github.com/rahmadnasutionn/animation-hooks',
+    createdAt: '20/7/2023',
+    tags: [
+      'react',
+      'next.js',
+      'typescript',
+      'tailwindcss',
+      'shadc-ui',
+      'custom-hooks',
+      'jest',
+      'react-testing-library'
+    ],
+    unFinished: true,
+  },
+  {
+    title: 'smart ai',
+    excerpt:
+      'Smart ai landing page',
+    demoUrl: 'https://smart-landingpage.vercel.app/',
+    srcUrl: 'https://github.com/rahmadnasutionn/smart-landingpage',
+    createdAt: '20/7/2023',
+    tags: [
+      'react',
+      'next.js',
+      'typescript',
+      'tailwindcss',
+      'shadc-ui',
+      'custom-hooks',
+      'jest',
+      'react-testing-library',
+    ],
+    unFinished: false,
+  },
+  {
     title: 'next movies',
     excerpt:
       'Learn and create a web movie',
