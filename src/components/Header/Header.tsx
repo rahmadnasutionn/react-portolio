@@ -1,47 +1,38 @@
 import { Link } from "react-router-dom";
 import { navMenu } from "../../config";
-import AnimOnAppear from "../AnimOnAppear";
 import useLanguage from "../../hooks/useLanguage";
+import MainNav from "../MainNav";
+import { GitHub, GithubIcon } from "../icons";
 
 function Header() {
   const { language, toggleLanguage } = useLanguage();
 
   return (
-    <AnimOnAppear>
-      <header 
-        className="w-full px-4 py-6 font-mono flex items-center justify-between max-w-7xl mx-auto"
-      >
-        <Link 
-          to={'/'} 
-          className="text-glow sm:react-effect"
-        >
-          Home
-        </Link>
-        <nav>
-          <ul className="flex items-center">
-            {navMenu.map(({ label, path }) => (
-              <li key={path} className="sm:mr-2">
-                <Link 
-                  to={path} 
-                  className="px-1 sm:px-2 code-effect text-sm sm:text-lg tracking-wide text-glow"
-                >
-                  {label}
-                </Link>
-              </li>
-            ))}
-            <li className="">
-              <button
-                title={language === 'id' ? 'Indonesia' : 'English'}
-                onClick={toggleLanguage}
-                className="code-effect text-[20px] sm:px-2 px-0 text-glow"
-              >
-                {language === 'id' ? 'ID' : 'EN'}
-              </button>
-            </li>
-          </ul>
+    <div className="container z-30 max-w-7xl mx-auto">
+      <div className="flex h-20 items-center justify-between py-6">
+        <MainNav items={navMenu} />
+        <nav className="flex space-x-4 justify-center align-middle">
+          <Link
+            to={'https://github.com/rahmadnasutionn/react-portolio/tree/master'}
+            target="_blank"
+            rel="norefferer"
+            className="flex"
+          >
+            <GitHub className="w-6 h-6 my-auto" />
+            <span className="sr-only">Github</span>
+          </Link>
+          <button 
+            type='button'
+            aria-label="Toggle Language"
+            title={language === 'id' ? 'Indonesia' : 'English'}
+            className="code-effect mx-2 text-glow text-[20px]"
+            onClick={toggleLanguage}
+          >
+            {language === 'id' ? 'ID' : 'EN'}
+          </button>
         </nav>
-      </header>
-    </AnimOnAppear>
+      </div>
+    </div>
   );
 }
 
