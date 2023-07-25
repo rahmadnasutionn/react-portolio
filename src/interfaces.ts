@@ -18,3 +18,8 @@ export interface LanguageContext {
   language: Language,
   setLanguage: Dispatch<SetStateAction<Language>>
 }
+
+export interface MainNavType {
+  label: string;
+  path: string;
+}
