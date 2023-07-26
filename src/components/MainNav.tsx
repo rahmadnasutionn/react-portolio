@@ -1,11 +1,12 @@
+import { ReactNode } from 'react';
 import { Link, useLocation } from "react-router-dom";
 import { MainNavType } from "../interfaces";
-import { Close, Menu } from './icons';
 import MobileNav from './MobileNav';
+import Spiral from './Spiral';
 
 interface MainNavProps {
   items: MainNavType[];
-  children?: typeof ReactNode;
+  children?: ReactNode;
 }
 
 function MainNav({ items, children }: MainNavProps) {
@@ -46,7 +47,12 @@ function MainNav({ items, children }: MainNavProps) {
         <span className='font-bold'>
           {showMobilMenu ? 'Close' : 'Menu'}
         </span>
-        {showMobilMenu ? <Close /> : <Menu />}
+        <Spiral
+          aria-label='Toggle Menu'
+          toggled={showMobilMenu} 
+          toggle={() => setShowMobileMenu(!showMobilMenu)} 
+        />
+        <span className='sr-only'>Toggle Menu</span>
       </button>
       {showMobilMenu && items && (
         <MobileNav items={items}>
