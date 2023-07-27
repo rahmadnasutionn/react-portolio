@@ -1,4 +1,15 @@
-// import  } from "./interfaces";
+import {
+  react,
+  redux,
+  nodeJs,
+  mongoDb,
+  tailwind,
+  typescript,
+  html,
+  css,
+  git,
+  javascript,
+} from './assets';
 
 export const siteMetadata = {
   siteUrl: 'https://rahmadnasutionn.vercel.app',
@@ -66,4 +77,17 @@ export const socialMenu = [
   { label: 'github', link: links.github },
   { label: 'linkedin', link: links.linkedin },
   { label: 'telegram', link: links.telegram },
+];
+
+export const tools = [
+  { src: react, alt: 'react' },
+  { src: redux, alt: 'redux' },
+  { src: nodeJs, alt: 'nodeJs' },
+  { src: mongoDb, alt: 'mongoDb' },
+  { src: typescript, alt: 'typescript' },
+  { src: tailwind, alt: 'tailwind' },
+  { src: html, alt: 'html' },
+  { src: css, alt: 'css' },
+  { src: git, alt: 'git' },
+  { src: javascript, alt: 'javascript' },
 ]

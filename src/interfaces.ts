@@ -1,4 +1,10 @@
-import { CSSProperties, Dispatch, ReactNode, SetStateAction } from "react";
+import { 
+  CSSProperties,
+  Dispatch,
+  ReactNode,
+  RefAttributes,
+  SetStateAction 
+} from "react";
 
 export interface Projects {
   title: string;
@@ -59,3 +65,23 @@ export interface BurgerProps extends ComponentBurgerProps {
   render: (o: RenderOptions) => ReactNode;
   lines?: number;
 }
+
+export type MarqueeProps = {
+  style?: CSSProperties;
+  className?: string;
+  autoFill?: boolean;
+  play?: boolean;
+  pauseOnHover?: boolean;
+  pauseOnClick?: boolean;
+  direction?: "left" | "right" | "up" | "down";
+  speed?: number;
+  delay?: number;
+  loop?: number;
+  gradient?: boolean;
+  gradientColor?: [number, number, number];
+  gradientWidth?: number | string;
+  onFinish?: () => void;
+  onCycleComplete?: () => void;
+  onMount?: () => void;
+  children?: ReactNode;
+} & RefAttributes<HTMLDivElement>;
