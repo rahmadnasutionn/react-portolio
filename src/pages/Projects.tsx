@@ -4,6 +4,8 @@ import useDocumentTitle from '../hooks/useDocumentTitle';
 import useLocalization from "../hooks/useLocalization";
 import { ProjectLists } from '../components/ProjectCards';
 import projects from '../projects';
+import Marquee from '../components/Marquee';
+import { tools } from '../config';
 
 function ProjectsPage() {
   useDocumentTitle('Projects');
@@ -28,6 +30,31 @@ function ProjectsPage() {
         <Section title='featured'>
           <ProjectLists projects={projects} />
         </Section>
+      </div>
+      <div className="max-w-4xl mx-auto w-full">
+        <section className='my-12 md:my-20'>
+          <h2 className='text-5xl mb-7 tracking-normal'>
+            Tools I Use
+          </h2>
+          <div className='max-w-7xl'>
+            <Marquee
+              pauseOnHover 
+              speed={40} 
+            >
+              {tools.map(({ src, alt }) => (
+                <img
+                  key={`logo-${alt}`}
+                  src={src}
+                  title={alt[0].toUpperCase() + alt.substring(1)}
+                  alt={`logo-${alt}-company`}
+                  width={80}
+                  height={40}
+                  className='mx-6 object-cover hover:bg-white/5 hover:rounded hover:shadow'
+                />
+              ))}
+            </Marquee>
+          </div>
+        </section>
       </div>
     </Layout>
   )
