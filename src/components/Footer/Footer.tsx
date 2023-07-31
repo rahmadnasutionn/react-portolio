@@ -1,5 +1,6 @@
 import { socialMenu } from "../../config"
 import AnimOnAppear from "../AnimOnAppear"
+import Tooltip from "../Tooltip"
 
 function Footer() {
   return (
@@ -9,14 +10,16 @@ function Footer() {
             <ul className="flex justify-end">
             {socialMenu.map(({ label, link }) => (
                 <li key={link} className="uppercase">
-                <a 
-                    href={link}
-                    target="_blank"
-                    rel="norefferer"
-                    className="font-mono px-2"
-                >
-                    {label}
-                </a>
+                  <Tooltip content={label} style="light">
+                    <a 
+                      href={link}
+                      target="_blank"
+                      rel="norefferer"
+                      className="font-mono px-2"
+                    >
+                      {label}
+                    </a>
+                  </Tooltip>
                 </li>
             ))}          
             </ul>
