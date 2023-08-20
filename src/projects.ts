@@ -2,6 +2,21 @@ import { Projects } from "./interfaces";
 
 const projects: Projects[] = [
   {
+    title: 'React Components',
+    excerpt:
+      'React Components',
+    srcUrl: 'https://github.com/rahmadnasutionn/react-component',
+    linkYoutube: 'https://www.youtube.com/playlist?list=PLD3W7R_0QrkETstUIzPr0K3cRhqZnAlhx',
+    createdAt: '20/7/2023',
+    tags: [
+      'react',
+      'vite.js',
+      'typescript',
+      'tailwindcss',
+    ],
+    unFinished: true,
+  },
+  {
     title: 'animations and hooks',
     excerpt:
       'A collection of handmade, free, written with typescript, and ready to use animations & hooks for your next project.',
@@ -17,41 +32,6 @@ const projects: Projects[] = [
       'custom-hooks',
       'jest',
       'react-testing-library'
-    ],
-    unFinished: true,
-  },
-  {
-    title: 'smart ai',
-    excerpt:
-      'Smart ai landing page',
-    demoUrl: 'https://smart-landingpage.vercel.app/',
-    srcUrl: 'https://github.com/rahmadnasutionn/smart-landingpage',
-    createdAt: '20/7/2023',
-    tags: [
-      'react',
-      'next.js',
-      'typescript',
-      'tailwindcss',
-      'shadc-ui',
-      'custom-hooks',
-      'jest',
-      'react-testing-library',
-    ],
-    unFinished: false,
-  },
-  {
-    title: 'next movies',
-    excerpt:
-      'Learn and create a web movie',
-    srcUrl: 'https://github.com/rahmadnasutionn/nextjs13-movie',
-    createdAt: '11/6/2023',
-    tags: [
-      'react',
-      'next.js',
-      'typescript',
-      'tailwindcss',
-      'tmdbapi',
-      'react-query',
     ],
     unFinished: true,
   },
@@ -83,90 +63,6 @@ const projects: Projects[] = [
       'redux-toolkit',
       'styled-components',
       'chart-js'
-    ],
-    unFinished: true,
-  },
-  {
-    title: 'semina',
-    excerpt:
-      'Bootcamp mern stack build website event like yesplis',
-    srcUrl: 'https://github.com/rahmadnasutionn/client-bootcamp-semina',
-    createdAt: '10/2/2022',
-    tags: [
-      'nextjs',
-      'typescript',
-      'mongoose',
-      'expressjs as backend',
-      'mongodb',
-      'reactjs as cms',
-    ],
-    unFinished: true,
-  },
-  {
-    title: 'storegg',
-    excerpt:
-      'Website top up voucher game',
-    srcUrl: 'https://github.com/rahmadnasutionn/storegg-main',
-    createdAt: '14/8/2022',
-    tags: [
-      'nextjs',
-      'typescript',
-      'mongoose',
-      'expressjs as backend',
-      'mongodb',
-    ],
-    unFinished: true,
-  },
-  {
-    title: 'todo list',
-    excerpt:
-      'this website was created to complete the challenge devcode.gethired.id',
-    srcUrl: 'https://github.com/rahmadnasutionn/devcode-todolist-reactjs',
-    demoUrl: 'https://devrank-todolist-rahmad.netlify.app/',
-    createdAt: '19/6/2023',
-    tags: [
-      'reactjs',
-      'typescript',
-    ],
-    unFinished: true,
-  },
-  {
-    title: 'grilly',
-    excerpt:
-      'Grilly is an application to fulfil submission dicoding in becoming front-end developer expert',
-    srcUrl: 'https://github.com/rahmadnasutionn/grily-app-pwa',
-    createdAt: '17/2/2022',
-    tags: [
-      'html',
-      'javascript',
-      'css',
-      'pwa'
-    ],
-    unFinished: true,
-  },
-  {
-    title: 'cocktail',
-    excerpt:
-      'submission front fundamental at dicoding',
-    srcUrl: 'https://github.com/rahmadnasutionn/cocktail',
-    createdAt: '10/12/2022',
-    tags: [
-      'html',
-      'javascript',
-      'css',
-    ],
-    unFinished: true,
-  },
-  {
-    title: 'bookshelf',
-    excerpt:
-      'submission of data management application using dom and local storage',
-    srcUrl: 'https://github.com/rahmadnasutionn/cocktail',
-    createdAt: '10/12/2022',
-    tags: [
-      'html',
-      'javascript',
-      'css',
     ],
     unFinished: true,
   },
