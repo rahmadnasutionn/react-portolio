@@ -1,5 +1,5 @@
 import { Projects } from '../interfaces';
-import { ExternalLinks, GithubIcon } from './icons';
+import { ExternalLinks, GithubIcon, YoutubeIcon } from './icons';
 import AnimOnAppear from './AnimOnAppear';
 
 function ProjectCards({
@@ -8,6 +8,7 @@ function ProjectCards({
   tags,
   demoUrl,
   srcUrl,
+  linkYoutube,
   unFinished
 }: Projects) {
   return (
@@ -34,6 +35,17 @@ function ProjectCards({
             rel='noreferrer'
           >
             <ExternalLinks />
+          </a>
+        )}
+
+        {linkYoutube && (
+          <a 
+            href={linkYoutube}
+            className='m-1'
+            target='_blank'
+            rel='noreferrer'
+          >
+            <YoutubeIcon />
           </a>
         )}
 
