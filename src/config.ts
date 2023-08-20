@@ -70,13 +70,15 @@ export const navMenu = [
 export const links = {
   github: 'https://github.com/rahmadnasutionn',
   linkedin: 'https://www.linkedin.com/in/rahmad-nasution-709b45245/',
-  telegram: 'https://t.me/rahmadnasutionn'
-}
+  telegram: 'https://t.me/rahmadnasutionn',
+  youtube: 'https://www.youtube.com/channel/UCMmQO_Xswhuu6MNvngNU42w',
+};
 
 export const socialMenu = [
   { label: 'github', link: links.github },
   { label: 'linkedin', link: links.linkedin },
   { label: 'telegram', link: links.telegram },
+  { label: 'youtube', link: links.youtube },
 ];
 
 export const tools = [
@@ -90,4 +92,4 @@ export const tools = [
   { src: css, alt: 'css' },
   { src: git, alt: 'git' },
   { src: javascript, alt: 'javascript' },
-]
+];
