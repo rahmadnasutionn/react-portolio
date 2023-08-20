@@ -17,6 +17,7 @@ export interface Projects {
   createdAt: string;
   tags: string[];
   demoUrl?: string;
+  linkYoutube?: string;
   srcUrl?: string;
   featured?: boolean;
   unFinished?: boolean;
