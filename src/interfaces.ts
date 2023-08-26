@@ -1,5 +1,3 @@
-import type { Placement } from '@floating-ui/core';
-import { UseRoleProps, useFloating } from '@floating-ui/react';
 
 import { 
   CSSProperties,
@@ -7,8 +5,6 @@ import {
   ReactNode,
   RefAttributes,
   SetStateAction,
-  ComponentProps,
-  PropsWithChildren,
 } from "react";
 
 export interface Projects {
@@ -92,57 +88,29 @@ export type MarqueeProps = {
   children?: ReactNode;
 } & RefAttributes<HTMLDivElement>;
 
-export interface ElementProps {
-  reference?: React.HTMLProps<Element>;
-  floating?: React.HTMLProps<HTMLElement>;
-  item?: React.HTMLProps<HTMLElement>;
-}
+export type TooltipPosition = 'top' | 'bottom' | 'left' | 'right';
 
-export interface FloatingTheme {
-  animation: string;
-  base: string;
+export type TooltipProps = {
+  children?: React.ReactNode;
   content: string;
-  hidden: string;
-  style: {
-    auto: string;
-    dark: string;
-    light: string;
-  };
-  target: string;
-}
-
-export type DeepPartial<T> = T extends object
-  ? {
-    [P in keyof T]?: DeepPartial<T[P]>
-  }
-  : T;
-  
-export type TooltipTheme = FloatingTheme;
-  
-export interface TooltipProps extends PropsWithChildren<Omit<ComponentProps<'div'>, 'content' | 'style'>> {
-  animation?: false | `duration-${number}`;
-  content?: ReactNode;
-  placement?: 'auto' | Placement;
-  style?: 'dark' | 'light' | 'auto';
-  trigger?: 'hover' | 'click';
-  theme?: DeepPartial<TooltipTheme>;
-}
-
-export type FloatingStyle = 'dark' | 'light' | 'auto';
-
-export interface FloatingProps extends PropsWithChildren, Omit<ComponentProps<'div'>, 'content' | 'style'> {
-  animation?: false | `duration-${number}`;
-  content: ReactNode;
-  placement?: 'auto' | Placement;
-  style?: FloatingStyle;
-  trigger?: 'hover' | 'click';
-  minWidth?: number;
-  theme: FloatingTheme;
-};
-
-export type UseFloatingInteractionsParams = {
-  context: ReturnType<typeof useFloating>['context'];
-  trigger?: 'hover' | 'click';
-  role?: UseRoleProps['role'];
-  interactions?: ElementProps[]
-}
+  className?: string;
+  disabledFocusListener?: boolean;
+  disabledMouseListener?: boolean;
+  enterDelay?: number;
+  leaveDelay?: number;
+  onBlur?: React.FocusEventHandler<HTMLDivElement>;
+  onClose?: (
+    event: React.FocusEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>,
+  ) => void;
+  onFocus?: React.MouseEventHandler<HTMLDivElement>;
+  onMouseEnter?: React.MouseEventHandler<HTMLDivElement>;
+  onMouseLeave?: React.MouseEventHandler<HTMLDivElement>;
+  onOpen?: (
+    event: React.FocusEvent<HTMLDivElement> | React.MouseEvent<HTMLDivElement>
+  ) => void;
+  style?: React.CSSProperties;
+  position?: TooltipPosition;
+} & Omit<
+  React.HTMLAttributes<HTMLSpanElement>,
+  'onBlur' | 'onClose' | 'onMouseEnter' | 'onMouseLeave' | 'onOpen'
+>
