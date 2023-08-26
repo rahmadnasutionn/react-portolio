@@ -20,16 +20,15 @@ function Contact() {
         </h2>
         <ul className="h3 mb-4">
           <li>
-            <Tooltip placement="left" content='Email' style="light">
+            <Tooltip position="left" content='Email'>
               <a href={`mailto:${siteMetadata.mail}`}>{siteMetadata.mail}</a>
             </Tooltip>
           </li>
           {socialMenu.map(({ label, link }) => (
             <li key={link}>
               <Tooltip 
-                placement="left" 
+                position="left"
                 content={label.charAt(0).toUpperCase() + label.slice(1)}
-                style="light"
               >
                 <a href={link} target="_blank" rel="noreferrer">
                   {label}
