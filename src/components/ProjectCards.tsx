@@ -22,6 +22,7 @@ function ProjectCards({
             target='_blank'
             rel='noreferrer'
             className='ml-3 m-1'
+            title='Source'
           >
             <GithubIcon />
           </a>
@@ -33,6 +34,7 @@ function ProjectCards({
             className='m-1'
             target='_blank'
             rel='noreferrer'
+            title='Demo'
           >
             <ExternalLinks />
           </a>
@@ -43,6 +45,7 @@ function ProjectCards({
             href={linkYoutube}
             className='m-1'
             target='_blank'
+            title='Link Youtube'
             rel='noreferrer'
           >
             <YoutubeIcon />

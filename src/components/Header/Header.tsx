@@ -13,7 +13,7 @@ function Header() {
       <div className="flex h-20 items-center justify-between py-6">
         <MainNav items={navMenu} />
         <nav className="flex space-x-4 justify-center align-middle">
-          <Tooltip content='Source' placement="bottom" style="light">
+          <Tooltip content='Source' position="bottom">
             <Link
               to={'https://github.com/rahmadnasutionn/react-portolio/tree/master'}
               target="_blank"
@@ -26,7 +26,7 @@ function Header() {
           </Tooltip>
           <Tooltip 
             content={language === 'en' ? 'ENGLISH' : 'INDONESIA'} 
-            style="light"
+            position="bottom"
           >
             <button 
               type='button'

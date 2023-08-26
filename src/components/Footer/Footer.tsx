@@ -10,8 +10,8 @@ function Footer() {
             <ul className="flex justify-end">
             {socialMenu.map(({ label, link }) => (
                 <li key={link} className="uppercase">
-                  <Tooltip content={label} style="light">
-                    <a 
+                  <Tooltip position="top" content={label}>
+                    <a
                       href={link}
                       target="_blank"
                       rel="norefferer"
