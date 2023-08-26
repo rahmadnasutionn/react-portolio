@@ -2,6 +2,22 @@ import { Projects } from "./interfaces";
 
 const projects: Projects[] = [
   {
+    title: 'Furniture Landing Page',
+    excerpt:
+      'Create an elegant landing page for your furniture website',
+    srcUrl: 'https://github.com/rahmadnasutionn/landingpage-furniture',
+    demoUrl: 'https://react-landingpage-furniture.vercel.app/',
+    linkYoutube: 'https://www.youtube.com/watch?v=FvfNDXy0A7s&t=3217s',
+    createdAt: '20/8/2023',
+    tags: [
+      'react',
+      'vite.js',
+      'typescript',
+      'tailwindcss',
+    ],
+    unFinished: true,
+  },
+  {
     title: 'React Components',
     excerpt:
       'React Components',
