@@ -20,11 +20,6 @@ function Me() {
             <p className="h3 max-w-2xl subtitle mb-4">
               {mePage.description}
             </p>
-            <AnimOnAppear direction="bottom">
-              <p className="h3 subtitle mb-4">
-                {mePage.description2}
-              </p>
-            </AnimOnAppear>
           </section>
         </AnimOnAppear>
       </div>
