@@ -27,7 +27,7 @@ function ProjectsPage() {
           </section>
         </AnimOnAppear>
 
-        <Section title='featured'>
+        <Section title='open source'>
           <ProjectLists projects={projects} />
         </Section>
       </div>

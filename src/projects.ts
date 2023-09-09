@@ -2,6 +2,54 @@ import { Projects } from "./interfaces";
 
 const projects: Projects[] = [
   {
+    title: 'Image Gallery',
+    excerpt:
+      'React Image Gallery feature including Skeleton Blur Thumbnail Image Lazy-Load',
+    srcUrl: 'https://github.com/rahmadnasutionn/react-images-gallery',
+    demoUrl: 'https://react-images-gallery-xi.vercel.app/',
+    linkYoutube: 'https://www.youtube.com/watch?v=hT2xqVHr4Gg&t=113s',
+    createdAt: '01/10/2023',
+    tags: [
+      'react',
+      'vite.js',
+      'typescript',
+      'tailwindcss',
+      'api pexels',
+    ],
+    unFinished: true,
+  },
+  {
+    title: 'Bubble Bash',
+    excerpt:
+      'Bubble Bash just agency landing page',
+    srcUrl: 'https://github.com/rahmadnasutionn/bubble-bash-landingpage',
+    demoUrl: 'https://bubble-bash-landingpage.vercel.app/',
+    linkYoutube: 'https://www.youtube.com/watch?v=Wyhcdbi7GRI&t=1371s',
+    createdAt: '28/9/2023',
+    tags: [
+      'react',
+      'vite.js',
+      'typescript',
+      'tailwindcss',
+    ],
+    unFinished: true,
+  },
+  {
+    title: 'React Components',
+    excerpt:
+      'React Components',
+    srcUrl: 'https://github.com/rahmadnasutionn/react-component',
+    linkYoutube: 'https://www.youtube.com/playlist?list=PLD3W7R_0QrkETstUIzPr0K3cRhqZnAlhx',
+    createdAt: '20/7/2023',
+    tags: [
+      'react',
+      'vite.js',
+      'typescript',
+      'tailwindcss',
+    ],
+    unFinished: true,
+  },
+  {
     title: 'Furniture Landing Page',
     excerpt:
       'Create an elegant landing page for your furniture website',
