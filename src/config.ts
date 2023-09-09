@@ -44,19 +44,17 @@ export const enLocalization = {
     homePage: {
       title: 'Passionate Developer',
       description:
-      'Hi there 👋 My name is Rahmad Nasution and I love build some stuff living in the web, or outside. Welcome to my garden!',
+      'Hi there 👋 My name is Rahmad Nasution and I love build some stuff living in the web, or outside. Welcome to my site!',
     },
     mePage: {
       title: 'Some words about me',
       description:
         "I'm Software Engineer who specialized in frontend side, My main skill is frontend dev using React. I also have an ability to code in backend side. Very passionate about modern web technology using JavaScript, TypeScript while taking into consideration the latest trends and techniques.",
-      description2:
-        "Beside programming, I'm interested in sports and enjoy to play sports like bike or calisthenics, and I like music."
     },
     projectPage: {
       title: 'Work, learn, and improve abilities',
       description:
-        "I love to build stuffs, seriously, I'm addicted 🤣. I like both  writing clean code, work on backend or frontend, building  web, ... Currently, I'm excited about React and frontend related topics."
+        "I love to build stuffs, seriously. I like both writing clean code, work on backend or frontend, building web. These are just a few of the projects that I published"
     }
   }
 }
