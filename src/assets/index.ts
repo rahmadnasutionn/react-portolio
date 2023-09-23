@@ -8,6 +8,8 @@ import html from './tools/html.png';
 import javascript from './tools/javascript.png';
 import css from './tools/css.png';
 import git from './tools/git.png';
+import flutter from './tools/flutter.png';
+import dart from './tools/dart.png';
 
 export {
   react,
@@ -15,6 +17,8 @@ export {
   javascript,
   css,
   git,
+  flutter,
+  dart,
   redux,
   nodeJs,
   mongoDb,

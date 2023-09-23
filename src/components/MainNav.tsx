@@ -44,7 +44,7 @@ function MainNav({ items, children }: MainNavProps) {
         className='md:hidden flex items-center space-x-2'
         onClick={() => setShowMobileMenu(!showMobilMenu)}
       >
-        <span className='font-bold'>
+        <span title={showMobilMenu ? 'Close' : 'Menu'} className='font-bold'>
           {showMobilMenu ? 'Close' : 'Menu'}
         </span>
         <Spiral

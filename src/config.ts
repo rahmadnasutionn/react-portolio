@@ -9,6 +9,8 @@ import {
   css,
   git,
   javascript,
+  flutter,
+  dart,
 } from './assets';
 
 export const siteMetadata = {
@@ -44,7 +46,7 @@ export const enLocalization = {
     homePage: {
       title: 'Passionate Developer',
       description:
-      'Hi there 👋 My name is Rahmad Nasution and I love build some stuff living in the web, or outside. Welcome to my site!',
+      'Hi everyone 👋 My name is Rahmad Nasution and I love build some stuff living in the web, or outside. Welcome to my site!',
     },
     mePage: {
       title: 'Some words about me',
@@ -90,4 +92,6 @@ export const tools = [
   { src: css, alt: 'css' },
   { src: git, alt: 'git' },
   { src: javascript, alt: 'javascript' },
+  { src: flutter, alt: 'flutter' },
+  { src: dart, alt: 'dart' },
 ];

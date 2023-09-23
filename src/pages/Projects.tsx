@@ -88,7 +88,7 @@ const CodeTitle = ({ category }: { category: string }) => (
     <code className='text-violet-400 mr-2 md:mr-4'>{'->'}</code>
     projects
     <code className="text-gray-50">(</code>
-    <code className="text-violet-400">{`'${category}'`}</code>
+    <code title={category} className="text-violet-400">{`'${category}'`}</code>
     <code className="text-gray-50">)</code>
   </pre>
 )

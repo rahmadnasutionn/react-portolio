@@ -2,8 +2,7 @@
 
 import * as React from 'react'
 import { TooltipPosition, TooltipProps } from '../../interfaces'
-import { isFocusEvent, isMouseEvent } from '../../utils';
-import cn from 'classnames';
+import { cn, isFocusEvent, isMouseEvent } from '../../utils';
 
 function Tooltip({
   children,

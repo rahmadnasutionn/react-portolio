@@ -140,7 +140,7 @@ export const submissionProject: Projects[] = [
     unFinished: true,
   },
   {
-    title: 'cocktails',
+    title: 'cocktails', 
     excerpt:
       'submission frontend-fundamental dicoding.com',
     srcUrl: 'https://github.com/rahmadnasutionn/cocktail',

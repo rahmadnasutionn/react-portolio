@@ -1,5 +1,5 @@
-import cn from 'classnames';
 import useIntersectionObserver from '../hooks/useIntersectionObserver';
+import { cn } from '../utils';
 
 type Direction = 'left' | 'right' | 'top' | 'bottom';
 

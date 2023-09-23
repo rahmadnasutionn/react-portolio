@@ -5,8 +5,7 @@ import { ComponentBurgerProps } from '../interfaces';
 const Spiral = ((props) => (
   <Burger {...props} lines={2} render={(o) => (
     <div
-      className="hamburger-react"
-      aria-label={o.label}
+      aria-label={o.label || 'Spiral'}
       aria-expanded={o.isToggled}
       data-testid="spiral"
       onClick={o.handler}
