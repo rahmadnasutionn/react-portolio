@@ -31,3 +31,8 @@ export function isMouseEvent<T>(
   return 'nativeEvent' in event && mouseEventTypes.includes(event.type);
 };
 
+export const getFullYear = (time: Date) => {
+  if (typeof time === 'undefined') return '';
+
+  return time.getFullYear();
+};

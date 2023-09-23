@@ -10,15 +10,15 @@ import {
 export interface Projects {
   title: string;
   excerpt: string;
-  createdAt: string;
+  createdAt?: Date;
   tags: string[];
   demoUrl?: string;
   linkYoutube?: string;
   srcUrl?: string;
-  featured?: boolean;
+  public?: boolean;
   unFinished?: boolean;
-  currently?: boolean;
-}
+  submission?: boolean;
+};
 
 export type Language = 'id' | 'en';
 

@@ -1,20 +1,25 @@
 import { Projects } from '../interfaces';
 import { ExternalLinks, GithubIcon, YoutubeIcon } from './icons';
 import AnimOnAppear from './AnimOnAppear';
+import { getFullYear } from '../utils';
 
 function ProjectCards({
   title,
   excerpt,
+  createdAt,
   tags,
   demoUrl,
   srcUrl,
   linkYoutube,
   unFinished
 }: Projects) {
+
   return (
     <article>
       <div className="flex">
-        <h3 className="title h4 mb-1 flex">{title}</h3>
+        <h3 title={title} className="title h4 mb-1 flex">
+          {title} {createdAt && `- ${getFullYear(createdAt)}`}
+        </h3>
 
         {srcUrl && (
           <a 
@@ -59,7 +64,7 @@ function ProjectCards({
         )}
       </div>
 
-      <p className='mb-4'>{excerpt}</p>
+      <p className='mb-4' title={excerpt}>{excerpt}</p>
       <p className="text-pink-400">
         <TagList tags={tags} />
       </p>
@@ -73,7 +78,7 @@ export function ProjectLists({ projects }: { projects: Projects[] }) {
   return (
     <ul className='my-6 md:my-12'>
       {projects.map((project, index) => (
-        <li key={project.title}>
+        <li key={`${project.title}-${index}`}>
           <AnimOnAppear>{index > 0 &&  <hr className='my-6' /> }</AnimOnAppear>
           <AnimOnAppear>
             <ProjectCards {...project} />

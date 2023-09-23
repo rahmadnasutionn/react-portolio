@@ -1,6 +1,6 @@
 import { Projects } from "./interfaces";
 
-const projects: Projects[] = [
+export const publicProjects: Projects[] = [
   {
     title: 'Image Gallery',
     excerpt:
@@ -8,7 +8,6 @@ const projects: Projects[] = [
     srcUrl: 'https://github.com/rahmadnasutionn/react-images-gallery',
     demoUrl: 'https://react-images-gallery-xi.vercel.app/',
     linkYoutube: 'https://www.youtube.com/watch?v=hT2xqVHr4Gg&t=113s',
-    createdAt: '01/10/2023',
     tags: [
       'react',
       'vite.js',
@@ -25,7 +24,6 @@ const projects: Projects[] = [
     srcUrl: 'https://github.com/rahmadnasutionn/bubble-bash-landingpage',
     demoUrl: 'https://bubble-bash-landingpage.vercel.app/',
     linkYoutube: 'https://www.youtube.com/watch?v=Wyhcdbi7GRI&t=1371s',
-    createdAt: '28/9/2023',
     tags: [
       'react',
       'vite.js',
@@ -40,7 +38,6 @@ const projects: Projects[] = [
       'React Components',
     srcUrl: 'https://github.com/rahmadnasutionn/react-component',
     linkYoutube: 'https://www.youtube.com/playlist?list=PLD3W7R_0QrkETstUIzPr0K3cRhqZnAlhx',
-    createdAt: '20/7/2023',
     tags: [
       'react',
       'vite.js',
@@ -56,7 +53,6 @@ const projects: Projects[] = [
     srcUrl: 'https://github.com/rahmadnasutionn/landingpage-furniture',
     demoUrl: 'https://react-landingpage-furniture.vercel.app/',
     linkYoutube: 'https://www.youtube.com/watch?v=FvfNDXy0A7s&t=3217s',
-    createdAt: '20/8/2023',
     tags: [
       'react',
       'vite.js',
@@ -71,7 +67,6 @@ const projects: Projects[] = [
       'React Components',
     srcUrl: 'https://github.com/rahmadnasutionn/react-component',
     linkYoutube: 'https://www.youtube.com/playlist?list=PLD3W7R_0QrkETstUIzPr0K3cRhqZnAlhx',
-    createdAt: '20/7/2023',
     tags: [
       'react',
       'vite.js',
@@ -86,7 +81,6 @@ const projects: Projects[] = [
       'A collection of handmade, free, written with typescript, and ready to use animations & hooks for your next project.',
     demoUrl: 'https://animation-hooks.vercel.app/',
     srcUrl: 'https://github.com/rahmadnasutionn/animation-hooks',
-    createdAt: '20/7/2023',
     tags: [
       'react',
       'next.js',
@@ -105,7 +99,6 @@ const projects: Projects[] = [
       'Comfysloth an eccomerce application',
     demoUrl: 'https://gadget-junkie.netlify.app/',
     srcUrl: 'https://github.com/rahmadnasutionn/comfysloth',
-    createdAt: '10/2/2023',
     tags: [
       'react',
       'typescript',
@@ -120,7 +113,6 @@ const projects: Projects[] = [
       'Jobster is an app for finding jobs, making job applications',
     demoUrl: 'https://jobster-app.vercel.app/landing',
     srcUrl: 'https://github.com/rahmadnasutionn/jobster-app',
-    createdAt: '10/2/2022',
     tags: [
       'react',
       'typescript',
@@ -130,6 +122,35 @@ const projects: Projects[] = [
     ],
     unFinished: true,
   },
-]
+];
 
-export default projects;
+export const submissionProject: Projects[] = [
+  {
+    title: 'grilly',
+    excerpt:
+      'Grilly is a restaurant catalog application to fulfill submissions dicoding in become Front-End Developer Expert',
+    srcUrl: 'https://github.com/rahmadnasutionn/grily-app-pwa',
+    createdAt: new Date('2023-02-17'),
+    tags: [
+      'javascript',
+      'pwa',
+      'HTML5',
+      'CSS3'
+    ],
+    unFinished: true,
+  },
+  {
+    title: 'cocktails',
+    excerpt:
+      'submission frontend-fundamental dicoding.com',
+    srcUrl: 'https://github.com/rahmadnasutionn/cocktail',
+    createdAt: new Date('2022-12-9'),
+    tags: [
+      'javascript',
+      'custom-components',
+      'HTML5',
+      'CSS3'
+    ],
+    unFinished: true,
+  },
+];

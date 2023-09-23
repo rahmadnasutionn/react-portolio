@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import useDocumentTitle from '../hooks/useDocumentTitle';
 import useLocalization from "../hooks/useLocalization";
 import { ProjectLists } from '../components/ProjectCards';
-import projects from '../projects';
+import { publicProjects, submissionProject } from '../projects';
 import Marquee from '../components/Marquee';
 import { tools } from '../config';
 
@@ -13,6 +13,7 @@ function ProjectsPage() {
   const {
     pages: { projectPage }
   } = useLocalization();
+
   return (
     <Layout backgroundIndex={8}>
       <div className="max-w-4xl mx-auto p-4 w-full">
@@ -27,8 +28,12 @@ function ProjectsPage() {
           </section>
         </AnimOnAppear>
 
-        <Section title='open source'>
-          <ProjectLists projects={projects} />
+        <Section title='public'>
+          <ProjectLists projects={publicProjects} />
+        </Section>
+
+        <Section title='submissions'>
+          <ProjectLists projects={submissionProject} />
         </Section>
       </div>
       <div className="max-w-4xl mx-auto w-full">
