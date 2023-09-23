@@ -81,9 +81,11 @@
 
   .Layout.page-bg-8::before {
     background-image: url(../assets/bg-8.jpeg);
+    background-attachment: fixed;
   }
   .Layout.page-bg-4::before {
     background-image: url(../assets/bg-4.jpeg);
+    background-attachment: fixed;
   }
 
   .background {
