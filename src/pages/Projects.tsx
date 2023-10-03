@@ -46,15 +46,15 @@ function ProjectsPage() {
               pauseOnHover 
               speed={40} 
             >
-              {tools.map(({ src, alt }) => (
+              {tools.map(({ src, alt }, index) => (
                 <img
-                  key={`logo-${alt}`}
+                  key={`logo-${alt}-${index}`}
                   src={src}
                   title={alt[0].toUpperCase() + alt.substring(1)}
                   alt={`logo-${alt}-company`}
                   width={80}
-                  height={40}
-                  className='mx-6 object-cover hover:bg-white/5 hover:rounded hover:shadow'
+                  height={80}
+                  className='object-cover py-1.5 mx-1 px-3 rounded hover:bg-zinc-800 transition-colors'
                 />
               ))}
             </Marquee>

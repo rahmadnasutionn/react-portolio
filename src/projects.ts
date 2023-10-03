@@ -2,6 +2,24 @@ import { Projects } from "./interfaces";
 
 export const publicProjects: Projects[] = [
   {
+    title: 'FileFlexConverter',
+    excerpt:
+      'Easily convert files from one format to another format many many times, online',
+    srcUrl: 
+      'https://github.com/rahmadnasutionn/file-flex-converter',
+    demoUrl: 
+      'https://file-flex-converter.vercel.app/',
+    tags: [
+      'react',
+      'nextjs',
+      'typescript',
+      'tailwindcss',
+      'shadcnui',
+      'vercel',
+    ],
+    unFinished: true,
+  },
+  {
     title: 'Image Gallery',
     excerpt:
       'React Image Gallery feature including Skeleton Blur Thumbnail Image Lazy-Load',
