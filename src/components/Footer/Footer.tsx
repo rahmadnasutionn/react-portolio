@@ -9,7 +9,7 @@ function Footer() {
         <nav>
             <ul className="flex justify-end">
             {socialMenu.map(({ label, link }) => (
-                <li key={link} className="uppercase">
+                <li key={label} className="uppercase">
                   <Tooltip position="top" content={label}>
                     <a
                       href={link}
