@@ -172,3 +172,52 @@ export const submissionProject: Projects[] = [
     unFinished: true,
   },
 ];
+
+export const designProjects: Projects[] = [
+  {
+    title: 'Travel Mobile Apps',
+    excerpt:
+      'Travel Mobile Apps this platform is for people to search beach, mountains, hotels, forest for their vacation. this mobile app design style of soft',
+    demoUrl: 
+      'https://www.figma.com/file/syGlkrd0SOsX7NVJUbVvAc/Enroll-Course?type=design&mode=design&t=Vfmu9DpkxgoBmxeL-1',
+    tags: [
+      'figma',
+      'uidesign',
+      'uxdesign',
+    ],
+    linkDribbble: 'https://dribbble.com/shots/22854500-Travel-App',
+    unFinished: true,
+  },
+  {
+    title: 'Home Sweet',
+    excerpt:
+      'this my new exploration of a Real estate mobile app ui kit. I created Real Estate App with a modern minimalist app design with neutral primary colors that match the modern brand concept.',
+    demoUrl: 
+      'https://www.figma.com/file/mV5anKlNr7c9K6v10fJe7D/home-sweet?type=design&mode=design&t=Vfmu9DpkxgoBmxeL-1',
+    tags: [
+      'figma',
+      'uidesign',
+      'uxdesign',
+      'prototype',
+      'wireframe',
+    ],
+    linkDribbble: 
+      'https://dribbble.com/shots/22828832-HomeSweet-Real-Estate-Design',
+    unFinished: true,
+  },
+  {
+    title: 'Eventity',
+    excerpt:
+      'Remaking the a page of the Eventify website as a learning process for UI online course Buildwithangga.com',
+    demoUrl: 
+      'https://www.figma.com/file/mL9dNZUc51tDvt544U2436/Eventify-Website?type=design&mode=design&t=Vfmu9DpkxgoBmxeL-1',
+    tags: [
+      'figma',
+      'uidesign',
+      'uxdesign',
+    ],
+    linkDribbble: 
+      'https://dribbble.com/shots/22815648-Eventify-Event-Website-Template',
+    unFinished: true,
+  },
+]

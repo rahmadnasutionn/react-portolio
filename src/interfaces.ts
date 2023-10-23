@@ -15,6 +15,7 @@ export interface Projects {
   demoUrl?: string;
   linkYoutube?: string;
   srcUrl?: string;
+  linkDribbble?: string;
   public?: boolean;
   unFinished?: boolean;
   submission?: boolean;

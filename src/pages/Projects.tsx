@@ -3,7 +3,7 @@ import Layout from '../components/Layout';
 import useDocumentTitle from '../hooks/useDocumentTitle';
 import useLocalization from "../hooks/useLocalization";
 import { ProjectLists } from '../components/ProjectCards';
-import { publicProjects, submissionProject } from '../projects';
+import { designProjects, publicProjects, submissionProject } from '../projects';
 import Marquee from '../components/Marquee';
 import { tools } from '../config';
 
@@ -34,6 +34,10 @@ function ProjectsPage() {
 
         <Section title='submissions'>
           <ProjectLists projects={submissionProject} />
+        </Section>
+
+        <Section title='design'>
+          <ProjectLists projects={designProjects} />
         </Section>
       </div>
       <div className="max-w-4xl mx-auto w-full">

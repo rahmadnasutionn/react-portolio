@@ -1,5 +1,5 @@
 import { Projects } from '../interfaces';
-import { ExternalLinks, GithubIcon, YoutubeIcon } from './icons';
+import { DribbbleIcon, ExternalLinks, GithubIcon, YoutubeIcon } from './icons';
 import AnimOnAppear from './AnimOnAppear';
 import { getFullYear } from '../utils';
 
@@ -11,13 +11,14 @@ function ProjectCards({
   demoUrl,
   srcUrl,
   linkYoutube,
-  unFinished
+  unFinished,
+  linkDribbble,
 }: Projects) {
 
   return (
     <article>
       <div className="flex">
-        <h3 title={title} className="title h4 mb-1 flex">
+        <h3 title={title} className="title h4 mb-1 flex mr-3">
           {title} {createdAt && `- ${getFullYear(createdAt)}`}
         </h3>
 
@@ -26,7 +27,7 @@ function ProjectCards({
             href={srcUrl}
             target='_blank'
             rel='noreferrer'
-            className='ml-3 m-1'
+            className='m-1'
             title='Source'
           >
             <GithubIcon />
@@ -54,6 +55,18 @@ function ProjectCards({
             rel='noreferrer'
           >
             <YoutubeIcon />
+          </a>
+        )}
+
+        {linkDribbble && (
+          <a 
+            href={linkDribbble}
+            className='m-1 cursor-pointer'
+            target='_blank'
+            title='Link Dribbble'
+            rel='noreferrer'
+          >
+            <DribbbleIcon />
           </a>
         )}
 
